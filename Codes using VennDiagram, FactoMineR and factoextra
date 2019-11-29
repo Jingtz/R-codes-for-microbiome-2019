@@ -1,0 +1,292 @@
+#Codes for plotting Fig 3A
+library(VennDiagram)
+venn.plot <- venn.diagram(
+  x = list(Actinobacteria=data.A, Bacteroidetes =data.B,Proteobacteria=data.P, Weevil= data.W),
+  imagetype = "svg",
+  filename = ".\\sum_microbiota\\nutrient.svg",
+  resolution=600,
+  units="cm",height=4,width=4,
+  scaled = TRUE,
+  euler.d=TRUE,
+  col = "transparent",
+  fill = c("cornflowerblue", "green", "yellow","darkorchid1"),
+  alpha = 0.50,
+  label.col = c("orange", "white", "darkorchid4", "white",
+                "white", "white", "white", "white", "darkblue", "white",
+                "white", "white", "white", "darkgreen", "white"),
+  # cex = 0.5,#for tiff
+  cex = 1.5,
+  fontfamily = "sans",
+  #fontface = "bold",
+  cat.col = c("darkblue", "darkgreen", "orange","darkorchid4"),
+  # cat.cex = 0.5,#for tiff
+  cat.cex=1.5,
+  cat.pos = c(-10,10,0,0),
+  #left and right
+  cat.dist = c(-0.40, -0.40, 0.10,0.10),
+  #up and down
+  # cat.cex = 1.5,
+  # cat.pos = 0,
+  # cat.dist = 0.07,
+  inverted = TRUE,
+  cat.fontfamily = "sans",
+  # rotation.degree = 270,
+  margin = 0.02
+  # margin = 0
+)
+
+#Codes for plotting Fig 3B
+venn.plot <- venn.diagram(
+  x = list(Actinobacteria=data.A, Bacteroidetes =data.B,Proteobacteria=data.P, Weevil= data.W),
+  imagetype = "svg",
+  filename = ".\\sum_microbiota\\psm.svg",
+  resolution=600,
+  units="cm",height=4,width=4,
+  scaled = TRUE,
+  euler.d=TRUE,
+  col = "transparent",
+  fill = c("cornflowerblue", "green", "yellow","darkorchid1"),
+  alpha = 0.50,
+  label.col = c("orange", "white", "darkorchid4", "white",
+                "white", "white", "white", "white", "darkblue", "white",
+                "white", "white", "white", "darkgreen", "white"),
+  # cex = 0.5,#for tiff
+  cex = 1.5,
+  fontfamily = "sans",
+  #fontface = "bold",
+  cat.col = c("darkblue", "darkgreen", "orange","darkorchid4"),
+  # cat.cex = 0.5,#for tiff
+  cat.cex=1.5,
+  cat.pos = c(-10,10,0,0),
+  #left and right
+  cat.dist = c(-0.40, -0.40, 0.10,0.10),
+  #up and down
+  # cat.cex = 1.5,
+  # cat.pos = 0,
+  # cat.dist = 0.07,
+  inverted = TRUE,
+  cat.fontfamily = "sans",
+  # rotation.degree = 270,
+  margin = 0.02
+  # margin = 0
+)
+
+#Codes for plotting Fig 3C
+venn.plot <- venn.diagram(
+  x = list(Actinobacteria=data.A, Bacteroidetes =data.B,Proteobacteria=data.P),
+  imagetype = "svg",
+  filename = ".\\sum_microbiota\\energy.svg",
+  resolution=600,
+  units="cm",height=4,width=4,
+  scaled = TRUE,
+  euler.d=TRUE,
+  col = "transparent",
+  fill = c("cornflowerblue", "green", "yellow"),
+  alpha = 0.50,
+  label.col = c("darkblue", "white", "darkgreen", "white",
+                "white", "white",  "orange"),
+  # cex = 0.5,#for tiff
+  cex = 1.5,
+  fontfamily = "sans",
+  #fontface = "bold",
+  cat.col = c("darkblue", "darkgreen", "orange"),
+  # cat.cex = 0.5,#for tiff
+  cat.cex=1.5,
+  # cat.pos = c(-10,10,0),
+  #left and right
+  # cat.dist = c(-0.40, -0.40, 0.10),
+  # cat.pos = c(-30,30,0),
+  # cat.dist = c(0.05, 0.05, -0.43),
+  cat.pos = c(10,-10,0),
+  cat.dist = c(-0.55, -0.55, 0.050),
+  #up and down
+  # cat.cex = 1.5,
+  # cat.pos = 0,
+  # cat.dist = 0.07,
+  inverted = TRUE,
+  cat.fontfamily = "sans",
+  # rotation.degree = 270,
+  margin = 0.05
+  # margin = 0
+)
+
+#Codes for plotting Fig 3D
+venn.plot <- venn.diagram(
+  x = list(Actinobacteria=data.A, Bacteroidetes =data.B,Proteobacteria=data.P),
+  # filename = ".\\sum_microbiota\\hydrolase-go.tiff",
+  imagetype = "svg",
+  filename = ".\\sum_microbiota\\essential.svg",
+  resolution=600,
+  units="cm",height=4,width=4,
+  scaled = TRUE,
+  euler.d=TRUE,
+  col = "transparent",
+  fill = c("cornflowerblue", "green", "yellow"),
+  alpha = 0.50,
+  label.col = c("darkblue", "white", "darkgreen", "white",
+                "white", "white",  "orange"),
+  # cex = 0.5,#for tiff
+  cex = 1.5,
+  fontfamily = "sans",
+  #fontface = "bold",
+  cat.col = c("darkblue", "darkgreen", "orange"),
+  # cat.cex = 0.5,#for tiff
+  cat.cex=1.5,
+  # cat.pos = c(-10,10,0),
+  #left and right
+  # cat.dist = c(-0.40, -0.40, 0.10),
+  cat.pos = c(25,-20,0),
+  cat.dist = c(0.05, -0.58, -0.60),
+  # cat.pos = c(10,-10,0),
+  # cat.dist = c(-0.55, -0.55, 0.050),
+  #up and down
+  # cat.cex = 1.5,
+  # cat.pos = 0,
+  # cat.dist = 0.07,
+  inverted = TRUE,
+  cat.fontfamily = "sans",
+  # rotation.degree = 270,
+  margin = 0.05
+  # margin = 0
+)
+################################################################
+#Fig 4A
+pca.p<-PCA(t(mydata.freq),scale.unit=FALSE,graph=FALSE)
+
+fviz_pca_ind(pca.p, col.ind = "cos2", pointsize = "cos2",
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),title="Proteome",
+             repel = TRUE # Avoid text overlapping (slow if many points)
+)
+
+svg(filename=".\\sum_microbiota\\pca-biplot-proteome.svg",width = 8,
+    height = 6,pointsize = 12)
+par0<-par(mar=c(4,4,1,1))
+fviz_pca_biplot(pca.p, 
+                col.ind = rf$phylum, palette = "jco",
+                addEllipses = FALSE, label = c("var","ind"),
+                col.var ="#2E9FDF", repel = TRUE,select.var = list(cos2 = 10),
+                legend.title = "Phylum",title="Proteome") 
+par(par0)
+dev.off()
+############
+#Fig 4B
+pca.g<-PCA(t(mydata.sub.total),scale.unit=FALSE,graph=FALSE)
+pca.g$var$cos2
+fviz_pca_ind(pca.g, col.ind = "cos2", pointsize = "cos2",
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),title="genome",
+             repel = TRUE # Avoid text overlapping (slow if many points)
+)
+
+fviz_pca_biplot(pca.g, 
+                col.ind = rf$phylum, palette = "jco",
+                addEllipses = FALSE, label = c("var","ind"),
+                col.var = "black", repel = TRUE,select.var = list(cos2 = 10),
+                legend.title = "Phylum",title="genome") 
+
+svg(filename=".\\sum_microbiota\\pca-biplot-genome.svg",width = 8,
+    height = 6,pointsize = 12)
+par0<-par(mar=c(4,4,1,1))
+fviz_pca_biplot(pca.g, 
+                col.ind = rf$phylum, palette = "jco",
+                addEllipses = FALSE, label = c("var","ind"),
+                col.var ="#2E9FDF", repel = TRUE,select.var = list(cos2 = 10),
+                legend.title = "Phylum",title="Genome") 
+par(par0)
+dev.off()
+######################################################################
+#Fig 5A
+# library(FactoMineR)
+enz.mfa <- MFA(temp.enz, group=c(length(group.1),length(group.2),length(group.3),length(group.4),length(group.5),length(group.6),length(group.7),1),
+               type=c(rep("s",7),"n"), ncp=7, name.group=c(group.name,"Phylum"),
+               num.group.sup=c(8),
+               graph=FALSE)
+write.table(enz.mfa$eig,".\\sum_microbiota\\eig_role0-org-perc-proteome-unw-s.txt",sep="\t")
+
+# library(factoextra)
+# Partial individuals
+
+svg(filename=".\\sum_microbiota\\ind-partial-role0-org-perc-proteome-s.svg",width = 8,
+    height = 6,pointsize = 12)
+par0<-par(mar=c(4,4,1,1))
+fviz_mfa_ind(enz.mfa, partial = "all",lenged="top",repel=TRUE,title="proteome")
+par(par0)
+dev.off()
+################
+#Fig 5B
+res.mfa <- MFA(temp, group=c(length(group.1),length(group.2),length(group.3),length(group.4),length(group.5),length(group.6),length(group.7),1),
+               type=c(rep("s",7),"n"), ncp=7, name.group=c(group.name,"Phylum"),
+               num.group.sup=c(8),#weight.col.mfa =as.vector(col.weight),
+               graph=FALSE)
+
+write.table(res.mfa$eig,".\\sum_microbiota\\eig_role0-org-perc-genome-unw-s.txt",sep="\t")
+
+# library(factoextra)
+# Partial individuals
+
+svg(filename=".\\sum_microbiota\\ind-partial-role0-org-perc-genome-s.svg",width = 8,
+    height = 6,pointsize = 12)
+par0<-par(mar=c(4,4,1,1))
+fviz_mfa_ind(res.mfa, partial = "all",lenged="top",repel=TRUE,title="genome")
+par(par0)
+dev.off()
+#####################################################
+#Fig 6A
+svg(filename=".\\sum_microbiota\\contribs-role0group-org-perc-proteome-s.svg",width = 4,
+    height = 3,pointsize = 12)
+par0<-par(mar=c(4,4,1,1))
+fviz_contrib(enz.mfa, choice = "group", axes = 1:7,palette = "jco",lenged="top",title="proteome")
+par(par0)
+dev.off()
+###############
+#Fig 6B
+svg(filename=".\\sum_microbiota\\contrib-rol0group-org-perc-genome-s.svg",width = 4,
+    height =3,pointsize = 12)
+par0<-par(mar=c(4,4,1,1))
+fviz_contrib(res.mfa, choice = "group", axes = 1:7,palette = "jco",lenged="topright",title="genome")
+par(par0)
+dev.off()
+############################################################
+#Fig 7A
+svg(filename=".\\sum_microbiota\\contribs-role0-org-perc-proteome-s.svg",width = 8,
+    height = 4,pointsize = 12)
+par0<-par(mar=c(4,4,1,1))
+fviz_contrib(enz.mfa, choice = "quanti.var", axes = 1:7,palette = "jco",lenged="top",title="proteome")
+par(par0)
+dev.off()
+###########
+#Fig 7B
+svg(filename=".\\sum_microbiota\\contrib-role0-org-perc-genome-s.svg",width = 8,
+    height =4,pointsize = 12)
+par0<-par(mar=c(4,4,1,1))
+fviz_contrib(res.mfa, choice = "quanti.var", axes = 1:7,palette = "jco",lenged="topright",title="genome")
+par(par0)
+dev.off()
+###########################################################
+#Fig 8A
+hierar <- list(c(group,group),c(7,7))
+res.hmfa <- HMFA(temp.hmfa, H = hierar, type=c(rep("s",length(hierar[[1]]))),
+                 name.group=list(paste(group.name,".",rep(c("g","p"),each=7),sep=""), c("genome","proteome")),graph=FALSE)
+
+svg(filename=".\\sum_microbiota\\group-hmfa-s-2.svg",width =8,
+    height = 6,pointsize = 12)
+par0<-par(mar=c(4,4,1,1))
+# fviz_hmfa_var(res.hmfa, choice="group",col.var="darkblue",xlim=c(0,0.86))
+fviz_hmfa_var(res.hmfa, choice="group",col.var="darkblue",xlim=c(0,1.0),ylim=c(0,0.9))
+par(par0)
+dev.off()
+
+#############
+#Fig 8B
+svg(filename=".\\sum_microbiota\\ind-hmfa-s.svg",width =8,
+    height = 6,pointsize = 12)
+par0<-par(mar=c(4,4,1,1))
+# fviz_hmfa_var(res.hmfa, choice="group",col.var="darkblue",xlim=c(0,0.86))
+fviz_hmfa_ind(res.hmfa, repel = TRUE, col.ind ="darkblue",xlim=c(-3,3),ylim=c(-3,3) )#"#2E9FDF"
+par(par0)
+dev.off()
+
+
+
+
+
+
